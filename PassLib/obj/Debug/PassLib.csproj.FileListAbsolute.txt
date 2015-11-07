@@ -1,0 +1,32 @@
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\bin\Debug\PassLib.exe.config
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\bin\Debug\PassLib.exe
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\bin\Debug\PassLib.pdb
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.GroupBoxSenhas.resources
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.Inserir.resources
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.Login.resources
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.Principal.resources
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.Properties.Resources.resources
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.footer.resources
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.csproj.GenerateResource.Cache
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.exe
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.pdb
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.Novo.resources
+C:\Users\Leonardo Costa\documents\PassLib\PassLib\obj\Debug\PassLib.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\bin\Debug\PassLib.exe.config
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\bin\Debug\PassLib.exe
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\bin\Debug\PassLib.pdb
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.GroupBoxSenhas.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.Inserir.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.InserirDoArquivo.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.Login.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.Novo.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.Principal.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.Properties.Resources.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.footer.resources
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.csproj.GenerateResource.Cache
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.exe
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.pdb
+C:\Users\Leonardo Costa\Documents\Visual Studio 2013\Projects\PassLIB\PassLib\obj\Debug\PassLib.csprojResolveAssemblyReference.cache
+F:\workspace\PassLib\PassLib\bin\Debug\PassLib.exe.config
+F:\workspace\PassLib\PassLib\obj\Debug\PassLib.exe
+F:\workspace\PassLib\PassLib\obj\Debug\PassLib.pdb

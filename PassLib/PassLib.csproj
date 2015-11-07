@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D29BB85-253E-4B0C-B2EE-04FAC5EFFA01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PassLib</RootNamespace>
+    <AssemblyName>PassLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Arquivo.cs" />
+    <Compile Include="Classes\Criptografia.cs" />
+    <Compile Include="Forms\GroupBoxSenhas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\GroupBoxSenhas.Designer.cs">
+      <DependentUpon>GroupBoxSenhas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inserir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inserir.Designer.cs">
+      <DependentUpon>Inserir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Itens.cs" />
+    <Compile Include="Forms\InserirDoArquivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InserirDoArquivo.Designer.cs">
+      <DependentUpon>InserirDoArquivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Novo.Designer.cs">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\footer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\footer.Designer.cs">
+      <DependentUpon>footer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Serializador\Bson\BsonBinaryType.cs" />
+    <Compile Include="Serializador\Bson\BsonBinaryWriter.cs" />
+    <Compile Include="Serializador\Bson\BsonObjectId.cs" />
+    <Compile Include="Serializador\Bson\BsonReader.cs" />
+    <Compile Include="Serializador\Bson\BsonToken.cs" />
+    <Compile Include="Serializador\Bson\BsonType.cs" />
+    <Compile Include="Serializador\Bson\BsonWriter.cs" />
+    <Compile Include="Serializador\ConstructorHandling.cs" />
+    <Compile Include="Serializador\Converters\BinaryConverter.cs" />
+    <Compile Include="Serializador\Converters\BsonObjectIdConverter.cs" />
+    <Compile Include="Serializador\Converters\CustomCreationConverter.cs" />
+    <Compile Include="Serializador\Converters\DataSetConverter.cs" />
+    <Compile Include="Serializador\Converters\DataTableConverter.cs" />
+    <Compile Include="Serializador\Converters\DateTimeConverterBase.cs" />
+    <Compile Include="Serializador\Converters\DiscriminatedUnionConverter.cs" />
+    <Compile Include="Serializador\Converters\EntityKeyMemberConverter.cs" />
+    <Compile Include="Serializador\Converters\ExpandoObjectConverter.cs" />
+    <Compile Include="Serializador\Converters\IsoDateTimeConverter.cs" />
+    <Compile Include="Serializador\Converters\JavaScriptDateTimeConverter.cs" />
+    <Compile Include="Serializador\Converters\KeyValuePairConverter.cs" />
+    <Compile Include="Serializador\Converters\RegexConverter.cs" />
+    <Compile Include="Serializador\Converters\StringEnumConverter.cs" />
+    <Compile Include="Serializador\Converters\VersionConverter.cs" />
+    <Compile Include="Serializador\Converters\XmlNodeConverter.cs" />
+    <Compile Include="Serializador\DateFormatHandling.cs" />
+    <Compile Include="Serializador\DateParseHandling.cs" />
+    <Compile Include="Serializador\DateTimeZoneHandling.cs" />
+    <Compile Include="Serializador\DefaultValueHandling.cs" />
+    <Compile Include="Serializador\FloatFormatHandling.cs" />
+    <Compile Include="Serializador\FloatParseHandling.cs" />
+    <Compile Include="Serializador\Formatting.cs" />
+    <Compile Include="Serializador\IJsonLineInfo.cs" />
+    <Compile Include="Serializador\JsonArrayAttribute.cs" />
+    <Compile Include="Serializador\JsonConstructorAttribute.cs" />
+    <Compile Include="Serializador\JsonContainerAttribute.cs" />
+    <Compile Include="Serializador\JsonConvert.cs" />
+    <Compile Include="Serializador\JsonConverter.cs" />
+    <Compile Include="Serializador\JsonConverterAttribute.cs" />
+    <Compile Include="Serializador\JsonConverterCollection.cs" />
+    <Compile Include="Serializador\JsonDictionaryAttribute.cs" />
+    <Compile Include="Serializador\JsonException.cs" />
+    <Compile Include="Serializador\JsonExtensionDataAttribute.cs" />
+    <Compile Include="Serializador\JsonIgnoreAttribute.cs" />
+    <Compile Include="Serializador\JsonObjectAttribute.cs" />
+    <Compile Include="Serializador\JsonPosition.cs" />
+    <Compile Include="Serializador\JsonPropertyAttribute.cs" />
+    <Compile Include="Serializador\JsonReader.cs" />
+    <Compile Include="Serializador\JsonReaderException.cs" />
+    <Compile Include="Serializador\JsonRequiredAttribute.cs" />
+    <Compile Include="Serializador\JsonSerializationException.cs" />
+    <Compile Include="Serializador\JsonSerializer.cs" />
+    <Compile Include="Serializador\JsonSerializerSettings.cs" />
+    <Compile Include="Serializador\JsonTextReader.cs" />
+    <Compile Include="Serializador\JsonTextWriter.cs" />
+    <Compile Include="Serializador\JsonToken.cs" />
+    <Compile Include="Serializador\JsonValidatingReader.cs" />
+    <Compile Include="Serializador\JsonWriter.cs" />
+    <Compile Include="Serializador\JsonWriterException.cs" />
+    <Compile Include="Serializador\Linq\Extensions.cs" />
+    <Compile Include="Serializador\Linq\IJEnumerable.cs" />
+    <Compile Include="Serializador\Linq\JArray.cs" />
+    <Compile Include="Serializador\Linq\JConstructor.cs" />
+    <Compile Include="Serializador\Linq\JContainer.cs" />
+    <Compile Include="Serializador\Linq\JEnumerable.cs" />
+    <Compile Include="Serializador\Linq\JObject.cs" />
+    <Compile Include="Serializador\Linq\JProperty.cs" />
+    <Compile Include="Serializador\Linq\JPropertyDescriptor.cs" />
+    <Compile Include="Serializador\Linq\JPropertyKeyedCollection.cs" />
+    <Compile Include="Serializador\Linq\JRaw.cs" />
+    <Compile Include="Serializador\Linq\JsonMergeSettings.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\ArrayIndexFilter.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\ArrayMultipleIndexFilter.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\ArraySliceFilter.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\FieldFilter.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\FieldMultipleFilter.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\JPath.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\PathFilter.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\QueryExpression.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\QueryFilter.cs" />
+    <Compile Include="Serializador\Linq\JsonPath\ScanFilter.cs" />
+    <Compile Include="Serializador\Linq\JToken.cs" />
+    <Compile Include="Serializador\Linq\JTokenEqualityComparer.cs" />
+    <Compile Include="Serializador\Linq\JTokenReader.cs" />
+    <Compile Include="Serializador\Linq\JTokenType.cs" />
+    <Compile Include="Serializador\Linq\JTokenWriter.cs" />
+    <Compile Include="Serializador\Linq\JValue.cs" />
+    <Compile Include="Serializador\Linq\MergeArrayHandling.cs" />
+    <Compile Include="Serializador\MemberSerialization.cs" />
+    <Compile Include="Serializador\MetadataPropertyHandling.cs" />
+    <Compile Include="Serializador\MissingMemberHandling.cs" />
+    <Compile Include="Serializador\NullValueHandling.cs" />
+    <Compile Include="Serializador\ObjectCreationHandling.cs" />
+    <Compile Include="Serializador\PreserveReferencesHandling.cs" />
+    <Compile Include="Serializador\ReferenceLoopHandling.cs" />
+    <Compile Include="Serializador\Required.cs" />
+    <Compile Include="Serializador\Schema\Extensions.cs" />
+    <Compile Include="Serializador\Schema\JsonSchema.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaBuilder.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaConstants.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaException.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaGenerator.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaModel.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaModelBuilder.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaNode.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaNodeCollection.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaResolver.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaType.cs" />
+    <Compile Include="Serializador\Schema\JsonSchemaWriter.cs" />
+    <Compile Include="Serializador\Schema\UndefinedSchemaIdHandling.cs" />
+    <Compile Include="Serializador\Schema\ValidationEventArgs.cs" />
+    <Compile Include="Serializador\Schema\ValidationEventHandler.cs" />
+    <Compile Include="Serializador\Serialization\CachedAttributeGetter.cs" />
+    <Compile Include="Serializador\Serialization\CamelCasePropertyNamesContractResolver.cs" />
+    <Compile Include="Serializador\Serialization\DefaultContractResolver.cs" />
+    <Compile Include="Serializador\Serialization\DefaultReferenceResolver.cs" />
+    <Compile Include="Serializador\Serialization\DefaultSerializationBinder.cs" />
+    <Compile Include="Serializador\Serialization\DiagnosticsTraceWriter.cs" />
+    <Compile Include="Serializador\Serialization\DynamicValueProvider.cs" />
+    <Compile Include="Serializador\Serialization\ErrorContext.cs" />
+    <Compile Include="Serializador\Serialization\ErrorEventArgs.cs" />
+    <Compile Include="Serializador\Serialization\ExpressionValueProvider.cs" />
+    <Compile Include="Serializador\Serialization\IAttributeProvider.cs" />
+    <Compile Include="Serializador\Serialization\IContractResolver.cs" />
+    <Compile Include="Serializador\Serialization\IReferenceResolver.cs" />
+    <Compile Include="Serializador\Serialization\ITraceWriter.cs" />
+    <Compile Include="Serializador\Serialization\IValueProvider.cs" />
+    <Compile Include="Serializador\Serialization\JsonArrayContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonContainerContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonDictionaryContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonDynamicContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonFormatterConverter.cs" />
+    <Compile Include="Serializador\Serialization\JsonISerializableContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonLinqContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonObjectContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonPrimitiveContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonProperty.cs" />
+    <Compile Include="Serializador\Serialization\JsonPropertyCollection.cs" />
+    <Compile Include="Serializador\Serialization\JsonSerializerInternalBase.cs" />
+    <Compile Include="Serializador\Serialization\JsonSerializerInternalReader.cs" />
+    <Compile Include="Serializador\Serialization\JsonSerializerInternalWriter.cs" />
+    <Compile Include="Serializador\Serialization\JsonSerializerProxy.cs" />
+    <Compile Include="Serializador\Serialization\JsonStringContract.cs" />
+    <Compile Include="Serializador\Serialization\JsonTypeReflector.cs" />
+    <Compile Include="Serializador\Serialization\MemoryTraceWriter.cs" />
+    <Compile Include="Serializador\Serialization\ObjectConstructor.cs" />
+    <Compile Include="Serializador\Serialization\OnErrorAttribute.cs" />
+    <Compile Include="Serializador\Serialization\ReflectionAttributeProvider.cs" />
+    <Compile Include="Serializador\Serialization\ReflectionValueProvider.cs" />
+    <Compile Include="Serializador\Serialization\TraceJsonReader.cs" />
+    <Compile Include="Serializador\Serialization\TraceJsonWriter.cs" />
+    <Compile Include="Serializador\StringEscapeHandling.cs" />
+    <Compile Include="Serializador\TypeNameHandling.cs" />
+    <Compile Include="Serializador\Utilities\Base64Encoder.cs" />
+    <Compile Include="Serializador\Utilities\BidirectionalDictionary.cs" />
+    <Compile Include="Serializador\Utilities\CollectionUtils.cs" />
+    <Compile Include="Serializador\Utilities\CollectionWrapper.cs" />
+    <Compile Include="Serializador\Utilities\ConvertUtils.cs" />
+    <Compile Include="Serializador\Utilities\DateTimeParser.cs" />
+    <Compile Include="Serializador\Utilities\DateTimeUtils.cs" />
+    <Compile Include="Serializador\Utilities\DictionaryWrapper.cs" />
+    <Compile Include="Serializador\Utilities\DynamicProxy.cs" />
+    <Compile Include="Serializador\Utilities\DynamicProxyMetaObject.cs" />
+    <Compile Include="Serializador\Utilities\DynamicReflectionDelegateFactory.cs" />
+    <Compile Include="Serializador\Utilities\DynamicUtils.cs" />
+    <Compile Include="Serializador\Utilities\EnumUtils.cs" />
+    <Compile Include="Serializador\Utilities\EnumValue.cs" />
+    <Compile Include="Serializador\Utilities\ExpressionReflectionDelegateFactory.cs" />
+    <Compile Include="Serializador\Utilities\FSharpUtils.cs" />
+    <Compile Include="Serializador\Utilities\ILGeneratorExtensions.cs" />
+    <Compile Include="Serializador\Utilities\ImmutableCollectionsUtils.cs" />
+    <Compile Include="Serializador\Utilities\JavaScriptUtils.cs" />
+    <Compile Include="Serializador\Utilities\JsonTokenUtils.cs" />
+    <Compile Include="Serializador\Utilities\LateBoundReflectionDelegateFactory.cs" />
+    <Compile Include="Serializador\Utilities\LinqBridge.cs" />
+    <Compile Include="Serializador\Utilities\MathUtils.cs" />
+    <Compile Include="Serializador\Utilities\MethodCall.cs" />
+    <Compile Include="Serializador\Utilities\MiscellaneousUtils.cs" />
+    <Compile Include="Serializador\Utilities\PropertyNameTable.cs" />
+    <Compile Include="Serializador\Utilities\ReflectionDelegateFactory.cs" />
+    <Compile Include="Serializador\Utilities\ReflectionObject.cs" />
+    <Compile Include="Serializador\Utilities\ReflectionUtils.cs" />
+    <Compile Include="Serializador\Utilities\StringBuffer.cs" />
+    <Compile Include="Serializador\Utilities\StringReference.cs" />
+    <Compile Include="Serializador\Utilities\StringUtils.cs" />
+    <Compile Include="Serializador\Utilities\ThreadSafeStore.cs" />
+    <Compile Include="Serializador\Utilities\TypeExtensions.cs" />
+    <Compile Include="Serializador\Utilities\ValidationUtils.cs" />
+    <Compile Include="Serializador\WriteState.cs" />
+    <EmbeddedResource Include="Forms\GroupBoxSenhas.resx">
+      <DependentUpon>GroupBoxSenhas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inserir.resx">
+      <DependentUpon>Inserir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InserirDoArquivo.resx">
+      <DependentUpon>InserirDoArquivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Novo.resx">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\footer.resx">
+      <DependentUpon>footer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Serializador\Dynamic.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redimensionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optimizada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
